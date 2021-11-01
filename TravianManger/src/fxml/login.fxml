@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.logincontroller">
+   <children>
+      <ImageView fitHeight="597.0" fitWidth="485.0" layoutX="-2.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="registration_2.png" />
+         </image>
+      </ImageView>
+      <MenuBar fx:id="menuApp" prefHeight="25.0" prefWidth="483.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="43.0" layoutY="380.0" text="user name (Travian)">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="usernametxt" layoutX="228.0" layoutY="377.0" />
+      <Label layoutX="45.0" layoutY="427.0" text="password (Travian)">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="45.0" layoutY="337.0" text="site url">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="urltext" layoutX="104.0" layoutY="334.0" prefHeight="26.0" prefWidth="273.0" promptText="EX https://zravian.com/" />
+      <Label layoutX="140.0" layoutY="113.0" text="Login Travian" textFill="#282828">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="enterbtn" layoutX="139.0" layoutY="521.0" mnemonicParsing="false" onAction="#getenterbtn" opacity="0.0" prefHeight="33.0" prefWidth="202.0" style="-fx-background-color: orange;" text="Start the adventure" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Label layoutX="50.0" layoutY="252.0" prefHeight="18.0" prefWidth="32.0" text="site">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <ComboBox fx:id="serverComboBox" layoutX="228.0" layoutY="291.0" prefWidth="150.0" />
+      <Label layoutX="45.0" layoutY="293.0" prefHeight="21.0" prefWidth="54.0" text="server">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <ComboBox fx:id="siteComBox" layoutX="228.0" layoutY="249.0" prefWidth="150.0" />
+      <CheckBox fx:id="remeberMe" layoutX="309.0" layoutY="477.0" mnemonicParsing="false" text="Remember Me" />
+      <PasswordField fx:id="passtxt" layoutX="228.0" layoutY="424.0" />
+   </children>
+</AnchorPane>
